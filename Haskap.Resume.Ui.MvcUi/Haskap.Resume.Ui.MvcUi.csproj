@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Haskap.Resume.Domain.Core\Haskap.Resume.Domain.Core.csproj" />
+    <ProjectReference Include="..\Haskap.Resume.Domain.Services\Haskap.Resume.Domain.Services.csproj" />
+    <ProjectReference Include="..\Haskap.Resume.Infrastructure.Data.NpgsqlDbContext\Haskap.Resume.Infrastructure.Data.NpgsqlDbContext.csproj" />
+    <ProjectReference Include="..\Haskap.Resume.Infrastructure.Providers\Haskap.Resume.Infrastructure.Providers.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Haskap.DddBase.Infrastructure.Providers">
+      <HintPath>..\References\Haskap.DddBase.Infrastructure.Providers.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

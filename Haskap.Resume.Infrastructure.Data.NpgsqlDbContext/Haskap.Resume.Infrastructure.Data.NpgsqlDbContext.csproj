@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Haskap.Resume.Domain.Core\Haskap.Resume.Domain.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Haskap.DddBase.Infrastructure.Data.EfCoreDbContexts.NpgsqlDbContext">
+      <HintPath>..\References\Haskap.DddBase.Infrastructure.Data.EfCoreDbContexts.NpgsqlDbContext.dll</HintPath>
+    </Reference>
+    <Reference Include="Haskap.DddBase.Infrastructure.Data.EfCoreEntityTypeConfigurations">
+      <HintPath>..\References\Haskap.DddBase.Infrastructure.Data.EfCoreEntityTypeConfigurations.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
