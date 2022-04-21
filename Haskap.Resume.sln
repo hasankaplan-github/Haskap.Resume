@@ -21,9 +21,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Haskap.Resume.Infrastructur
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Haskap.Resume.Ui.MvcUi", "Haskap.Resume.Ui.MvcUi\Haskap.Resume.Ui.MvcUi.csproj", "{F1BBBF50-76C5-4370-84B7-C5979F32C1A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haskap.Resume.Domain.Core", "Haskap.Resume.Domain.Core\Haskap.Resume.Domain.Core.csproj", "{6841A733-CD96-4F10-8E13-D47D579C88DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Haskap.Resume.Domain.Core", "Haskap.Resume.Domain.Core\Haskap.Resume.Domain.Core.csproj", "{6841A733-CD96-4F10-8E13-D47D579C88DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haskap.Resume.Infrastructure.Data.NpgsqlDbContext", "Haskap.Resume.Infrastructure.Data.NpgsqlDbContext\Haskap.Resume.Infrastructure.Data.NpgsqlDbContext.csproj", "{736FF68C-F00E-46B2-BD39-517009A9690E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Haskap.Resume.Infrastructure.Data.NpgsqlDbContext", "Haskap.Resume.Infrastructure.Data.NpgsqlDbContext\Haskap.Resume.Infrastructure.Data.NpgsqlDbContext.csproj", "{736FF68C-F00E-46B2-BD39-517009A9690E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haskap.Resume.Application.UseCaseServices.Dtos", "Haskap.Resume.Application.UseCaseServices.Dtos\Haskap.Resume.Application.UseCaseServices.Dtos.csproj", "{6D999364-305C-424F-A340-7182AD3761FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haskap.Resume.Application.UseCaseServices", "Haskap.Resume.Application.UseCaseServices\Haskap.Resume.Application.UseCaseServices.csproj", "{0AA60153-76A0-400D-B248-0AB5228BCB7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haskap.Resume.Application.UseCaseServices.Contracts", "Haskap.Resume.Application.UseCaseServices.Contracts\Haskap.Resume.Application.UseCaseServices.Contracts.csproj", "{B6231E5D-6FC3-4F12-9251-73FDAC85FEC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{736FF68C-F00E-46B2-BD39-517009A9690E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{736FF68C-F00E-46B2-BD39-517009A9690E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{736FF68C-F00E-46B2-BD39-517009A9690E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D999364-305C-424F-A340-7182AD3761FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D999364-305C-424F-A340-7182AD3761FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D999364-305C-424F-A340-7182AD3761FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D999364-305C-424F-A340-7182AD3761FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AA60153-76A0-400D-B248-0AB5228BCB7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AA60153-76A0-400D-B248-0AB5228BCB7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AA60153-76A0-400D-B248-0AB5228BCB7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AA60153-76A0-400D-B248-0AB5228BCB7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6231E5D-6FC3-4F12-9251-73FDAC85FEC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6231E5D-6FC3-4F12-9251-73FDAC85FEC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6231E5D-6FC3-4F12-9251-73FDAC85FEC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6231E5D-6FC3-4F12-9251-73FDAC85FEC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +79,9 @@ Global
 		{F1BBBF50-76C5-4370-84B7-C5979F32C1A5} = {01852EB6-2A78-469A-BD8B-CA6635BD9AFE}
 		{6841A733-CD96-4F10-8E13-D47D579C88DC} = {27D953C2-E606-46A3-BAE0-A02E7690D057}
 		{736FF68C-F00E-46B2-BD39-517009A9690E} = {9260725E-4560-409F-BCBA-025B01964BCC}
+		{6D999364-305C-424F-A340-7182AD3761FB} = {A53889E0-413B-4A74-842C-AF5002D89C79}
+		{0AA60153-76A0-400D-B248-0AB5228BCB7F} = {A53889E0-413B-4A74-842C-AF5002D89C79}
+		{B6231E5D-6FC3-4F12-9251-73FDAC85FEC1} = {A53889E0-413B-4A74-842C-AF5002D89C79}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {904B5C1C-FF0A-4F29-BF29-340C9798895E}

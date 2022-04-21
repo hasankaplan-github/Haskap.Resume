@@ -1,27 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Haskap.Resume.Application.UseCaseServices.Contracts\Haskap.Resume.Application.UseCaseServices.Contracts.csproj" />
     <ProjectReference Include="..\Haskap.Resume.Application.UseCaseServices.Dtos\Haskap.Resume.Application.UseCaseServices.Dtos.csproj" />
-    <ProjectReference Include="..\Haskap.Resume.Application.UseCaseServices\Haskap.Resume.Application.UseCaseServices.csproj" />
     <ProjectReference Include="..\Haskap.Resume.Domain.Core\Haskap.Resume.Domain.Core.csproj" />
     <ProjectReference Include="..\Haskap.Resume.Domain.Services\Haskap.Resume.Domain.Services.csproj" />
     <ProjectReference Include="..\Haskap.Resume.Infrastructure.Data.NpgsqlDbContext\Haskap.Resume.Infrastructure.Data.NpgsqlDbContext.csproj" />
-    <ProjectReference Include="..\Haskap.Resume.Infrastructure.Providers\Haskap.Resume.Infrastructure.Providers.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Haskap.DddBase.Infrastructure.Data.EfCoreDbContexts.NpgsqlDbContext">
       <HintPath>..\References\Haskap.DddBase.Infrastructure.Data.EfCoreDbContexts.NpgsqlDbContext.dll</HintPath>
-    </Reference>
-    <Reference Include="Haskap.DddBase.Infrastructure.Providers">
-      <HintPath>..\References\Haskap.DddBase.Infrastructure.Providers.dll</HintPath>
     </Reference>
   </ItemGroup>
 

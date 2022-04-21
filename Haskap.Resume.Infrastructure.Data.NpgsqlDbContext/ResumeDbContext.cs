@@ -14,8 +14,8 @@ public class ResumeDbContext : BaseEfCoreNpgsqlDbContext
     {
     }
 
-    public DbSet<Message> Messages { get; set; }
-    public DbSet<User> Users { get; set; }
+    public DbSet<Message> Message { get; set; }
+    public DbSet<User> User { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

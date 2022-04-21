@@ -1,4 +1,6 @@
 ﻿using Haskap.DddBase.Infrastructure.Providers;
+using Haskap.Resume.Application.UseCaseServices;
+using Haskap.Resume.Application.UseCaseServices.Contracts;
 using Microsoft.Extensions.DependencyInjection;
 //using Tesmer.PaymentSystem.Infrastructure.Data.Interceptors;
 
@@ -14,7 +16,7 @@ public static class ServiceCollectionExtensions
 
     public static void AddUseCaseServices(this IServiceCollection services)
     {
-        //services.AddTransient<IBasketService, BasketService>();
+        services.AddTransient<IContactService, ContactService>();
         //services.AddTransient<IPaymentService, PaymentService>();
         //services.AddTransient<ICreditCardTypeService, CreditCardTypeService>();
         //services.AddTransient<IAccountService, AccountService>();

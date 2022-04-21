@@ -20,7 +20,7 @@ public class MessageBody : ValueObject
     public MessageBody(string value)
     {
         Guard.Against.NullOrWhiteSpace(value, nameof(value));
-        Guard.Against.InvalidInput(value, nameof(value), x => x.Length > 2000);
+        Guard.Against.InvalidInput(value, nameof(value), x => x.Length < 2000);
 
         Value = value;
     }

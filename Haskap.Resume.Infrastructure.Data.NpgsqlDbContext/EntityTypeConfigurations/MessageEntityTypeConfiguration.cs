@@ -13,5 +13,9 @@ public class MessageEntityTypeConfiguration : BaseEntityTypeConfiguration<Messag
         base.Configure(builder); // Must call this
 
         // other configurations here
+        builder.OwnsOne(x => x.SenderName);
+        builder.OwnsOne(x => x.SenderEmailAddress);
+        builder.OwnsOne(x => x.Subject);
+        builder.OwnsOne(x => x.Body);
     }
 }

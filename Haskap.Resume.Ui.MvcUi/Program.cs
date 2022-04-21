@@ -1,6 +1,19 @@
+using Haskap.Resume.Infrastructure.Data.NpgsqlDbContext;
+using Haskap.Resume.Ui.MvcUi;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionString = builder.Configuration.GetConnectionString("ResumeConnectionString");
+
 // Add services to the container.
+builder.Services.AddDbContext<ResumeDbContext>((serviceProvider, options) => {
+    options.UseNpgsql(connectionString);
+    //options.AddInterceptors(serviceProvider.GetRequiredService<AuditSaveChangesInterceptor<Guid?>>());
+    //options.AddInterceptors(serviceProvider.GetRequiredService<AuditHistoryLogSaveChangesInterceptor<Guid?>>());
+});
+
+builder.Services.AddUseCaseServices();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
