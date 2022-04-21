@@ -8,8 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Haskap.Resume.Domain.Core\Haskap.Resume.Domain.Core.csproj" />
-    <ProjectReference Include="..\Resume.DbContext\Haskap.Resume.Infrastructure.Data.NpgsqlDbContext.csproj" />
-    <ProjectReference Include="..\Resume.Entities\Haskap.Resume.Domain.Core.csproj" />
+    <ProjectReference Include="..\Haskap.Resume.Infrastructure.Data.NpgsqlDbContext\Haskap.Resume.Infrastructure.Data.NpgsqlDbContext.csproj" />
   </ItemGroup>
 
 </Project>
