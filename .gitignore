@@ -340,5 +340,5 @@ ASALocalRun/
 healthchecksdb
 
 appsettings.Development.json
-appsettings.Production.json
-appsettings.json
+Haskap.Resume.Ui.MvcUi/appsettings.Production.json
+Haskap.Resume.Ui.MvcUi/appsettings.json
