@@ -4,5 +4,5 @@ namespace Haskap.Resume.Application.UseCaseServices.Contracts;
 
 public interface IContactService
 {
-    Task SendMessage(SendMessageInputDto sendMessageInputDto);
+    Task SendMessageAsync(SendMessageInputDto sendMessageInputDto);
 }

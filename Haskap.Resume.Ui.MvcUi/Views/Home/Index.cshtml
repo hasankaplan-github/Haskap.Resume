@@ -1,229 +1,28 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Hoş Geldiniz...";
 }
 
 <!-- Page Content-->
 <div class="container-fluid p-0">
     <!-- About-->
-    <section class="resume-section" id="about">
-        <div class="resume-section-content">
-            <h1 class="mb-0">
-                HASAN
-                <span class="text-primary">KAPLAN</span>
-            </h1>
-            <div class="subheading mb-5">
-                ANKARA, TÜRKİYE · (505) 071-0520 ·
-                <a href="mailto:hasankaplan.kariyer@gmail.com">HASANKAPLAN.KARIYER@GMAIL.COM</a>
-            </div>
-            <p class="lead mb-5">Yeni teknolojileri öğrenmeye ve kendimi geliştirmeye çok önem veririm. Bunun için eğitim videolarından, 
-                makalelerden, ve açık kaynak projelerden çokça faydalanırım. Yazılım mimarisi ve mimari tasarım hakkında bilgi alışverişinde bulunmayı severim.
-            </p>
-            <p class="lead mb-5">Şu anda freelance olarak çalışmaktayım. Uygun fiyatlı yazılım projeleri gerçekleştirmekteyim.
-                Yazılım ihtiyaçlarınız için bu sayfanın en altındaki iletişim formundan veya doğrudan telefon-eposta ile bana ulaşabilirsiniz.
-            </p>
-            <div class="social-icons">
-                <a class="social-icon" href="https://www.linkedin.com/in/hasan-kaplan-734334218/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a class="social-icon" href="https://github.com/hasankaplan-github" target="_blank"><i class="fab fa-github"></i></a>
-               @* <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>*@
-            </div>
-        </div>
-    </section>
+    @await Component.InvokeAsync("About")
+    
     <hr class="m-0" />
     <!-- Experience-->
-    <section class="resume-section" id="experience">
-        <div class="resume-section-content">
-            <h2 class="mb-5">İŞ DENEYİMLERİ</h2>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">KIDEMLİ YAZILIM GELİŞTİRME UZMANI</h3>
-                    <div class="subheading mb-3">YD YAZILIM</div>
-                    <p>İhale kapsamında YD Yazılım firması bünyesinde, "Çevre, Şehircilik, ve İklim Değişikliği Bakanlığında" ve "Türmob/Tesmer" de yönetim sistemi projelerinde görev aldım. 
-                        Banka entegrasyonu gerçekleştirdim.</p>
-                    <p>C#, .Net Mvc, MsSql, Postgresql, .Net Core</p>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">Ekim 2021 - Nisan 2022</span></div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">YAZILIM GELİŞTİRME UZMANI</h3>
-                    <div class="subheading mb-3">ATILIM ÜNİVERSİTESİ</div>
-                    <p>Üniversite çalışanlarının ve öğrencilerin kullandığı bir bilgi sistemi olan Erp yazılımının geliştirilmesinde rol aldım. 
-                    Bilgi sisteminin içerisinde, onay aşamaları olan, öğrencilerin ve çalışanların kullandığı anket sistemi ve sadece 
-                    çalışanlara açık öneri sisteminin analizini, teknik tasarımını, ve geliştirmelerini yaptım.
-                    </p>
-                    <p>Asp.net Mvc, Entity framework, C#, Oracle, Angular, .NetCore</p>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">Ocak 2019 - Ekim 2021</span></div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">YAZILIM GELİŞTİRME UZMANI</h3>
-                    <div class="subheading mb-3">TÜRK TELEKOM</div>
-                    <p>SYS firmasının Viases(C#) uygulaması ve Eclipse IDE için plugin olan Dialog Designer
-                        (Java) uygulaması ile çağrı merkezi (IVR) yazılımları/uygulamaları geliştirmek (Kendimi IVR yazılımları konusunda gelişti
-                        rdim.) TTNet Çağrı Merkezi IVR akışı yazılımından sorumlu olmak. 
-                        TTNet Çağrı Merkezi için IVR üzerinden fatura ödeme ve otomatik ödeme talimatı alma akışlarının yazılımının gerçekleş
-                        tirilmesi. IDO (İstanbul Deniz Otobüsü) çağrı merkezi IVR yazılımlarını hazırlamak ve güncellemelerini yapmak. Yeni 
-                        çağrı merkezleri için IVR akışları geliştirmek. Var olan çağrı merkezi IVR akışlarını güncellemek ve gerekli değişiklikleri 
-                        yapmak. Çağrı merkezleri için web uygulamaları geliştirmek. İş akışının takip edildiği, her aşamada farklı kişilere görev 
-                        atamalarının yapıldığı bir web uygulamasını baştan sona geliştirmek (ASP.NET ve MSSQL.) Dış kaynak (outsource) 
-                        firmalarla birlikte çalışarak iş takibi ve analizi yapmak. Geliştirilen işlerin yönetime raporlanması. 
-                        Çağrı merkezlerinin genel işleyişi hakkında bilgim bulunmaktadır.
-                    </p>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">Eylül 2008 - Kasım 2013</span></div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">YAZILIM GELİŞTİRME UZMANI</h3>
-                    <div class="subheading mb-3">İŞLEM COĞRAFİ BİLGİ SİSTEMLERİ</div>
-                    <p>ArcGIS framework’ ünü kullanarak coğrafi bilgi sistemleri yazılımları geliştirdim.</p>
-                    <p>C#.NET, MsSql, ArcGis</p>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">Ocak 2008 - Eylül 2008</span></div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">STAJYER MÜHENDİS</h3>
-                    <div class="subheading mb-3">TAI</div>
-                    <p>Yazılım geliştirme sürecinin aşamaları ve proje yönetimi.</p>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">Temmuz 2006 - Ağustos 2006</span></div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">STAJYER MÜHENDİS</h3>
-                    <div class="subheading mb-3">SYM A.Ş.</div>
-                    <p>MSMQ kullanımına yönelik C# dili ile sınıflar oluşturmak. NUnit ile oluşturulan sınıfların testlerini yapmak.</p>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">Haziran 2006 - Temmuz 2006</span></div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">STAJYER MÜHENDİS</h3>
-                    <div class="subheading mb-3">MNG BİLGİSAYAR</div>
-                    <p>Visual Studio 2003 ve SQL 2000 deneyimini geliştirmek amacıyla küçük uygulamalar yazmak. 
-                    SQL ile Stored Procedure’ler ve Trigger’ lar geliştirmek. </p>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">Haziran 2006 - Temmuz 2006</span></div>
-            </div>
-        </div>
-    </section>
+    @await Component.InvokeAsync("Experience")
+    
     <hr class="m-0" />
     <!-- Education-->
-    <section class="resume-section" id="education">
-        <div class="resume-section-content">
-            <h2 class="mb-5">EĞİTİM</h2>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">ANKARA ÜNİVERSİTESİ</h3>
-                    <div class="subheading mb-3">YÜKSEK LİSANS</div>
-                    <div>Mühendislik Fakültesi - Bilgisayar Mühendisliği</div>
-                    <p>GPA: 3.00/4</p>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">Eylül 2008 - Terk</span></div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ</h3>
-                    <div class="subheading mb-3">LİSANS</div>
-                    <div>Mühendislik Mimarlık Fakültesi - Bilgisayar Mühendisliği (İngilizce)</div>
-                    <p>GPA: 2.88/4</p>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">Eylül 2002 - Temmuz 2007</span></div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">AKTEPE SÜPER LİSESİ</h3>
-                    <div class="subheading mb-3">LİSE</div>
-                    <div>Matematik Fen</div>
-                    <p>GPA: 4.5/5</p>
-                </div>
-                <div class="flex-shrink-0"><span class="text-primary">Eylül 1997 - Haziran 2001</span></div>
-            </div>            
-        </div>
-    </section>
+    @await Component.InvokeAsync("Education")
+    
     <hr class="m-0" />
     <!-- Skills-->
-    <section class="resume-section" id="skills">
-        <div class="resume-section-content">
-            <h2 class="mb-5">YETKİNLİKLER</h2>
-            <div class="subheading mb-3">PROGRAMLAMA DİLLERİ & ARAÇLAR</div>
-            <ul class="list-inline dev-icons">
-                @*<li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>*@
-                @*<li class="list-inline-item"><i class="fab fa-js-square"></i></li>*@
-                <li class="list-inline-item"><i class="devicon-c-plain"></i></li>
-                <li class="list-inline-item"><i class="devicon-csharp-plain"></i></li>
-                <li class="list-inline-item"><i class="devicon-dot-net-plain-wordmark"></i></li>
-                <li class="list-inline-item"><i class="devicon-dotnetcore-plain"></i></li>
-                <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                <li class="list-inline-item"><i class="devicon-typescript-plain"></i></li>
-                <li class="list-inline-item"><i class="devicon-vscode-plain"></i></li>                
-                <li class="list-inline-item"><i class="devicon-postgresql-plain-wordmark"></i></li>                
-                <li class="list-inline-item"><i class="devicon-microsoftsqlserver-plain-wordmark"></i></li>
-                
-                
-                @*<li class="list-inline-item"><i class="fab fa-react"></i></li>*@
-                @*<li class="list-inline-item"><i class="fab fa-node-js"></i></li>*@
-               @* <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                <li class="list-inline-item"><i class="fab fa-npm"></i></li>*@
-            </ul>
-            @*<div class="subheading mb-3">Workflow</div>*@
-            <ul class="fa-ul mb-0">
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Microsoft Office
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    IVR - Dialog Designer - Viases
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    EDA in Monolithic Applications
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Ardalis.GuardClauses - Automapper - FluentValidation
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Domain Driven Design (DDD)
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    SOLID, DRY Principles
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    JQuery, Bootstrap
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    HTML, JSON
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                    Entity Framework (Code First - Migrations)
-                </li>
-            </ul>
-        </div>
-    </section>
+    @await Component.InvokeAsync("Skills")
+    
     <hr class="m-0" />
     <!-- Interests-->
-    <section class="resume-section" id="interests">
-        <div class="resume-section-content">
-            <h2 class="mb-5">İLGİ ALANLARI</h2>
-            <p>Müzik (Gitar, Bağlama çalmak), kitap okumak, yeni teknolojileri takip etmek ve öğrenmek.</p>
-            @*<p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>*@
-        </div>
-    </section>
+    @await Component.InvokeAsync("Interests")
+    
     <hr class="m-0" />
     <!-- Awards-->
     @*
@@ -275,36 +74,6 @@
     *@
 
     <!-- Contact-->
-    <section class="resume-section" id="contact">
-        <div class="resume-section-content">
-            <h2 class="mb-5">İLETİŞİM</h2>
-            <form asp-controller="Home" asp-action="SendMessage">
-                <div class="form-group">
-                    <label></label>
-                    <input name="senderName" type="text" class="form-control" placeholder="İsim" required />
-                </div>
-                <div class="form-group">
-                    <label></label>
-                    <input name="senderEmailAddress" type="email" class="form-control" placeholder="Eposta" required />
-                </div>
-                <div class="form-group">
-                    <label></label>
-                    <input name="subject" type="text" class="form-control" placeholder="Konu" required />
-                </div>
-                <div class="form-group">
-                    <label></label>
-                    <textarea name="body" id="Body" cols="30" rows="7" class="form-control" placeholder="Mesaj" required></textarea>
-                </div>
-                <div class="form-group">
-                    <br />
-                    <input type="submit" class="btn btn-primary float-end" value="GÖNDER" />
-                </div>
-            </form>
-
-            <div class="subheading mb-5">
-                (505) 071-0520 ·
-                <a href="mailto:hasankaplan.kariyer@gmail.com">HASANKAPLAN.KARIYER@GMAIL.COM</a>
-            </div>
-        </div>
-    </section>
+    @await Component.InvokeAsync("Contact")
+    
 </div>

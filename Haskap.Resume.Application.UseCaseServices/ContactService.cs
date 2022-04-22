@@ -15,7 +15,7 @@ public class ContactService : IContactService
         _resumeDbContext=resumeDbContext;
     }
 
-    public async Task SendMessage(SendMessageInputDto sendMessageInputDto)
+    public async Task SendMessageAsync(SendMessageInputDto sendMessageInputDto)
     {
         var messageSenderName = new MessageSenderName(sendMessageInputDto.SenderName);
         var messageSenderEmailAddress = new MessageSenderEmailAddress(sendMessageInputDto.SenderEmailAddress);
