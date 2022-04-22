@@ -37,6 +37,6 @@ public class HomeController : Controller
     public async Task<IActionResult> SendMessage(SendMessageInputDto sendMessageInputDto)
     {
         await _contactService.SendMessage(sendMessageInputDto);
-        return View(nameof(Index));
+        return RedirectToAction(nameof(Index));
     }
 }

@@ -1,4 +1,5 @@
-﻿using Haskap.Resume.Application.UseCaseServices.Contracts;
+﻿using Haskap.DddBase.Utilities.Guids;
+using Haskap.Resume.Application.UseCaseServices.Contracts;
 using Haskap.Resume.Application.UseCaseServices.Dtos;
 using Haskap.Resume.Domain.Core.MessageAggregate;
 using Haskap.Resume.Infrastructure.Data.NpgsqlDbContext;
@@ -20,7 +21,7 @@ public class ContactService : IContactService
         var messageSenderEmailAddress = new MessageSenderEmailAddress(sendMessageInputDto.SenderEmailAddress);
         var messageSubject = new MessageSubject(sendMessageInputDto.Subject);
         var messageBody = new MessageBody(sendMessageInputDto.Body);
-        var message = new Message(messageSenderName, messageSenderEmailAddress, messageSubject, messageBody);
+        var message = new Message(GuidGenerator.CreateSimpleGuid(), messageSenderName, messageSenderEmailAddress, messageSubject, messageBody);
 
         await _resumeDbContext.Message.AddAsync(message);
         await _resumeDbContext.SaveChangesAsync();

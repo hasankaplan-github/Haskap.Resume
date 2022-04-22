@@ -18,6 +18,9 @@
     <Reference Include="Haskap.DddBase.Infrastructure.Data.EfCoreDbContexts.NpgsqlDbContext">
       <HintPath>..\References\Haskap.DddBase.Infrastructure.Data.EfCoreDbContexts.NpgsqlDbContext.dll</HintPath>
     </Reference>
+    <Reference Include="Haskap.DddBase.Utilities">
+      <HintPath>..\References\Haskap.DddBase.Utilities.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

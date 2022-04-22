@@ -21,11 +21,12 @@ public class Message : AggregateRoot
         
     }
     
-    public Message(
+    public Message(Guid id,
         MessageSenderName messageSenderName, 
         MessageSenderEmailAddress messageSenderEmailAddress, 
         MessageSubject messageSubject, 
         MessageBody messageBody)
+        : base(id)
     {
         SenderName = messageSenderName;
         SenderEmailAddress = messageSenderEmailAddress;
