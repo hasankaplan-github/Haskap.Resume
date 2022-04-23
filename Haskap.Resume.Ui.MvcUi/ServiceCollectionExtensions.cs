@@ -1,4 +1,4 @@
-﻿using Haskap.DddBase.Infrastructure.Providers;
+﻿using Haskap.DddBase.Domain.Providers;
 using Haskap.Resume.Application.UseCaseServices;
 using Haskap.Resume.Application.UseCaseServices.Contracts;
 using Microsoft.Extensions.DependencyInjection;
